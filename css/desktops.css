@@ -1,0 +1,14 @@
+.main__title {
+  grid-row: 4 / 5;
+}
+
+.main__section--counter {
+  grid-row: 5 / 9;
+}
+
+.counter__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40em;
+}

@@ -23,4 +23,106 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  min-width: 20em;
+  width: 100%;
+  min-height: 30em;
+  height: 100vh;
+}
+
+.main__title {
+  grid-row: 4 / 5;
+  grid-column: 2 / 12;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.main__section--counter {
+  grid-row: 5 / 8;
+  grid-column: 2 / 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter__paragraph {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.counter__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 1em;
+  width: 100%;
+}
+
+.counter__button {
+  width: 8em;
+  padding: 0.5em 1em;
+  border: 0.2em solid var(--tertiary-color);
+  border-radius: 0.5em;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.counter__button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.counter__button--reset {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+@media screen and (width >= 500px) {
+  .main__title {
+    grid-row: 3 / 4;
+  }
+
+  .main__section--counter {
+    grid-row: 4 / 8;
+  }
+
+  .main__title {
+    font-size: 5rem;
+  }
+
+  .counter__paragraph {
+    font-size: 10rem;
+  }
+
+  .counter__button {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (width >= 1000px) {
+  .main__title {
+    grid-row: 4 / 5;
+  }
+
+  .main__section--counter {
+    grid-row: 5 / 9;
+  }
+
+  .counter__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40em;
+  }
 }

@@ -1,0 +1,19 @@
+.main__title {
+  grid-row: 3 / 4;
+}
+
+.main__section--counter {
+  grid-row: 4 / 8;
+}
+
+.main__title {
+  font-size: 5rem;
+}
+
+.counter__paragraph {
+  font-size: 10rem;
+}
+
+.counter__button {
+  font-size: 1.3rem;
+}
