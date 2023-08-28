@@ -1,0 +1,26 @@
+/* Font Family*/
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* CSS Variables */
+
+:root {
+  --primary-color: #f1f5f8;
+  --secondary-color: #102a42;
+  --tertiary-color: #222222;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
